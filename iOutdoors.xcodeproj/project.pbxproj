@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27BF4A641B72F0CB00810756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27BF4A661B72F0CB00810756 /* InfoPlist.strings */; };
+		27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A691B72FCE100810756 /* BaseObject.swift */; };
+		27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A6B1B73068900810756 /* ODGroupTableVC.swift */; };
+		27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A701B7347FE00810756 /* UIHelper.swift */; };
+		27BF4A731B7351D100810756 /* UserCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A721B7351D100810756 /* UserCenterVC.swift */; };
+		27BF4A751B73522700810756 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A741B73522700810756 /* HomeVC.swift */; };
 		27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62271B7206270033EDB2 /* AppDelegate.swift */; };
 		27FD622B1B7206270033EDB2 /* iOutdoors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62291B7206270033EDB2 /* iOutdoors.xcdatamodeld */; };
 		27FD622D1B7206270033EDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD622C1B7206270033EDB2 /* ViewController.swift */; };
@@ -14,6 +20,10 @@
 		27FD62321B7206270033EDB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FD62311B7206270033EDB2 /* Images.xcassets */; };
 		27FD62351B7206270033EDB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FD62331B7206270033EDB2 /* LaunchScreen.xib */; };
 		27FD62411B7206270033EDB2 /* iOutdoorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62401B7206270033EDB2 /* iOutdoorsTests.swift */; };
+		27FD62541B7211780033EDB2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62531B7211780033EDB2 /* TabBarController.swift */; };
+		27FD625B1B7215250033EDB2 /* ODBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD625A1B7215250033EDB2 /* ODBaseViewController.swift */; };
+		27FD62611B72F05B0033EDB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27FD62631B72F05B0033EDB2 /* Localizable.strings */; };
+		570A02646A3421AE3F1AB8C4 /* Pods_iOutdoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
+		27BF4A611B72F09C00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		27BF4A651B72F0CB00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27BF4A671B72F0CF00810756 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		27BF4A691B72FCE100810756 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		27BF4A6B1B73068900810756 /* ODGroupTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODGroupTableVC.swift; sourceTree = "<group>"; };
+		27BF4A701B7347FE00810756 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		27BF4A721B7351D100810756 /* UserCenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCenterVC.swift; sourceTree = "<group>"; };
+		27BF4A741B73522700810756 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		27FD62221B7206270033EDB2 /* iOutdoors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOutdoors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FD62261B7206270033EDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FD62271B7206270033EDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +57,12 @@
 		27FD623A1B7206270033EDB2 /* iOutdoorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOutdoorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FD623F1B7206270033EDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FD62401B7206270033EDB2 /* iOutdoorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOutdoorsTests.swift; sourceTree = "<group>"; };
+		27FD62531B7211780033EDB2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		27FD625A1B7215250033EDB2 /* ODBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODBaseViewController.swift; sourceTree = "<group>"; };
+		27FD625E1B72178A0033EDB2 /* iOutDoors-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOutDoors-Prefix.pch"; sourceTree = "<group>"; };
+		27FD62651B72F0780033EDB2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C1A978053C5249655A3E3EFC /* Pods-iOutdoors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.release.xcconfig"; sourceTree = "<group>"; };
+		E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570A02646A3421AE3F1AB8C4 /* Pods_iOutdoors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27BF4A681B72FCC700810756 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A691B72FCE100810756 /* BaseObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27BF4A6F1B7347B600810756 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A701B7347FE00810756 /* UIHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		27FD62191B7206270033EDB2 = {
 			isa = PBXGroup;
 			children = (
 				27FD62241B7206270033EDB2 /* iOutdoors */,
 				27FD623D1B7206270033EDB2 /* iOutdoorsTests */,
 				27FD62231B7206270033EDB2 /* Products */,
+				27FD624A1B720D180033EDB2 /* Common */,
+				27FD624B1B720D180033EDB2 /* Platform */,
+				27FD624C1B720D180033EDB2 /* Vendor */,
+				2D947C4F7431DE4062D2D28C /* Pods */,
+				EBF6B50F0646287F39F3314D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +126,7 @@
 		27FD62241B7206270033EDB2 /* iOutdoors */ = {
 			isa = PBXGroup;
 			children = (
+				27FD624D1B720E420033EDB2 /* Classes */,
 				27FD62271B7206270033EDB2 /* AppDelegate.swift */,
 				27FD622C1B7206270033EDB2 /* ViewController.swift */,
 				27FD622E1B7206270033EDB2 /* Main.storyboard */,
@@ -86,6 +134,7 @@
 				27FD62331B7206270033EDB2 /* LaunchScreen.xib */,
 				27FD62291B7206270033EDB2 /* iOutdoors.xcdatamodeld */,
 				27FD62251B7206270033EDB2 /* Supporting Files */,
+				27FD625E1B72178A0033EDB2 /* iOutDoors-Prefix.pch */,
 			);
 			path = iOutdoors;
 			sourceTree = "<group>";
@@ -94,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				27FD62261B7206270033EDB2 /* Info.plist */,
+				27FD62631B72F05B0033EDB2 /* Localizable.strings */,
+				27BF4A661B72F0CB00810756 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +166,138 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27FD624A1B720D180033EDB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27FD624B1B720D180033EDB2 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		27FD624C1B720D180033EDB2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		27FD624D1B720E420033EDB2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A6F1B7347B600810756 /* Helper */,
+				27FD62521B720E420033EDB2 /* UI */,
+				27FD62501B720E420033EDB2 /* Data */,
+				27FD624F1B720E420033EDB2 /* Core */,
+				27FD624E1B720E420033EDB2 /* Config */,
+				27FD62511B720E420033EDB2 /* Network */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		27FD624E1B720E420033EDB2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		27FD624F1B720E420033EDB2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		27FD62501B720E420033EDB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A681B72FCC700810756 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		27FD62511B720E420033EDB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27FD62521B720E420033EDB2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				27FD62591B7215080033EDB2 /* Base */,
+				27FD62571B7214D90033EDB2 /* Activity */,
+				27FD62581B7214D90033EDB2 /* Compete */,
+				27FD62551B72148E0033EDB2 /* Home */,
+				27FD62561B72148E0033EDB2 /* User */,
+				27FD62531B7211780033EDB2 /* TabBarController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		27FD62551B72148E0033EDB2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A741B73522700810756 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		27FD62561B72148E0033EDB2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A721B7351D100810756 /* UserCenterVC.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		27FD62571B7214D90033EDB2 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		27FD62581B7214D90033EDB2 /* Compete */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Compete;
+			sourceTree = "<group>";
+		};
+		27FD62591B7215080033EDB2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				27FD625A1B7215250033EDB2 /* ODBaseViewController.swift */,
+				27BF4A6B1B73068900810756 /* ODGroupTableVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2D947C4F7431DE4062D2D28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */,
+				C1A978053C5249655A3E3EFC /* Pods-iOutdoors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBF6B50F0646287F39F3314D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27FD62441B7206270033EDB2 /* Build configuration list for PBXNativeTarget "iOutdoors" */;
 			buildPhases = (
+				04E47AA367AC4A144AA98297 /* Check Pods Manifest.lock */,
 				27FD621E1B7206270033EDB2 /* Sources */,
 				27FD621F1B7206270033EDB2 /* Frameworks */,
 				27FD62201B7206270033EDB2 /* Resources */,
+				9C6D1AB05C0D65F68BF3DA21 /* Copy Pods Resources */,
+				5848838DF796223356C7CAED /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +345,7 @@
 		27FD621A1B7206270033EDB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OD;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = xiaoluuu;
 				TargetAttributes = {
@@ -178,6 +365,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 27FD62191B7206270033EDB2;
 			productRefGroup = 27FD62231B7206270033EDB2 /* Products */;
@@ -196,8 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FD62301B7206270033EDB2 /* Main.storyboard in Resources */,
+				27FD62611B72F05B0033EDB2 /* Localizable.strings in Resources */,
 				27FD62351B7206270033EDB2 /* LaunchScreen.xib in Resources */,
 				27FD62321B7206270033EDB2 /* Images.xcassets in Resources */,
+				27BF4A641B72F0CB00810756 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +400,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04E47AA367AC4A144AA98297 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5848838DF796223356C7CAED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6D1AB05C0D65F68BF3DA21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27FD621E1B7206270033EDB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				27FD622D1B7206270033EDB2 /* ViewController.swift in Sources */,
+				27BF4A751B73522700810756 /* HomeVC.swift in Sources */,
+				27FD62541B7211780033EDB2 /* TabBarController.swift in Sources */,
 				27FD622B1B7206270033EDB2 /* iOutdoors.xcdatamodeld in Sources */,
+				27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */,
 				27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */,
+				27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */,
+				27FD625B1B7215250033EDB2 /* ODBaseViewController.swift in Sources */,
+				27BF4A731B7351D100810756 /* UserCenterVC.swift in Sources */,
+				27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +485,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		27BF4A661B72F0CB00810756 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27BF4A651B72F0CB00810756 /* en */,
+				27BF4A671B72F0CF00810756 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		27FD622E1B7206270033EDB2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -254,6 +508,15 @@
 				27FD62341B7206270033EDB2 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		27FD62631B72F05B0033EDB2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FD62651B72F0780033EDB2 /* zh-Hans */,
+				27BF4A611B72F09C00810756 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,9 +607,13 @@
 		};
 		27FD62451B7206270033EDB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOutdorrs/iOutDoors-Prefix.pch";
 				INFOPLIST_FILE = iOutdoors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,9 +621,13 @@
 		};
 		27FD62461B7206270033EDB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A978053C5249655A3E3EFC /* Pods-iOutdoors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOutdorrs/iOutDoors-Prefix.pch";
 				INFOPLIST_FILE = iOutdoors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -370,6 +641,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOutdoors/iOutDoors-Prefix";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -389,6 +662,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOutdoors/iOutDoors-Prefix";
 				INFOPLIST_FILE = iOutdoorsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +690,7 @@
 				27FD62461B7206270033EDB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27FD62471B7206270033EDB2 /* Build configuration list for PBXNativeTarget "iOutdoorsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +699,7 @@
 				27FD62491B7206270033EDB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

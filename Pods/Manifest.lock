@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (1.3.0)
+  - RDVTabBarController (1.1.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.3)
+  - RDVTabBarController (~> 1.1.9)
+
+SPEC CHECKSUMS:
+  Alamofire: 220403a8d5840e0b4c946a6fbaf209dbca124282
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+
+COCOAPODS: 0.37.2

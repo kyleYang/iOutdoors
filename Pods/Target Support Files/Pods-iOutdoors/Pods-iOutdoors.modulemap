@@ -1,0 +1,6 @@
+framework module Pods_iOutdoors {
+  umbrella header "Pods-iOutdoors-umbrella.h"
+
+  export *
+  module * { export * }
+}

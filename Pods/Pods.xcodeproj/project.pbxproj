@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D6A76355DAC3CEBD22B91C /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B13DF9C7FCD2604F8DD10 /* RDVTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D43A585EFE7105674F6EE05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C71D7387E5478A864D3650 /* CoreGraphics.framework */; };
+		0D7EA312DFE80C7A3A0C4211 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3714BEE43425C1C5FC1EA8A9 /* RDVTabBar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11DF5841B03F0148086A25B7 /* Pods-iOutdoors-RDVTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6407384CE71D3149244F4CE5 /* Pods-iOutdoors-RDVTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		149625854CDF2820E7F438D9 /* Pods-iOutdoors-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2287EEE1BC344E06173D1835 /* Pods-iOutdoors-Alamofire-dummy.m */; };
+		2FF23F986EFC5F737DFB4DDD /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B739AE18F7A89BC67CEE7A /* ResponseSerialization.swift */; };
+		392B93F6E88DB3C063956291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6A676DDD408BA7E5971F90 /* Foundation.framework */; };
+		3CD9ADEEA7275F56DD15F713 /* Pods-iOutdoors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D5D724A97AD859ED4C4602 /* Pods-iOutdoors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4581C5178CE857AB1A9C6ADB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB8A199883587A82744FD1 /* ParameterEncoding.swift */; };
+		4865D80E0184D9134F79D4F2 /* RDVTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E5A90DF3DEF5B28A3D60B0D7 /* RDVTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E875026A4F87D99DE3C505 /* Pods-iOutdoors-RDVTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83752F2D07A39DC88B82AB14 /* Pods-iOutdoors-RDVTabBarController-dummy.m */; };
+		4BF27D1BDE1AD0BA40A87D17 /* RDVTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = D315B0BEA03F30BC884D0C55 /* RDVTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6F1F83C606634BED46C60F /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF838C28BF1AD7024097F08 /* ServerTrustPolicy.swift */; };
+		5EBE403D2E8871AD4DAD0B6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6A676DDD408BA7E5971F90 /* Foundation.framework */; };
+		6F7E97512132ED709D22E180 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9BBF8441C9299A6ED2E122 /* RDVTabBarController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7111C7FFF119BBB9BEEB60FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6A676DDD408BA7E5971F90 /* Foundation.framework */; };
+		7ACEDDADA830E79A9E7891F3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B895324646DCD37E32445 /* MultipartFormData.swift */; };
+		859567D3BAD2CE9FE710798F /* Pods-iOutdoors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C39AE5759A783744D7DD8 /* Pods-iOutdoors-dummy.m */; };
+		85BF4A4244E60706E8DDF09E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3783CCA787AD5BD442F85 /* Request.swift */; };
+		97AE95860E04397CDF4E2C98 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12C47E5A7BF768A2379E58 /* Upload.swift */; };
+		9CD03B06EC60969DA4DA4FB9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC4714B74A9574FB6F2785C /* Validation.swift */; };
+		A6363185591C11D984845766 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD2DC451A03760B329E58E /* Download.swift */; };
+		B7326BF0E06AE526E378668F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE92BCE54CA6B7D5F278D8 /* UIKit.framework */; };
+		BC980E5972F5BD2F3102DE16 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C091286D0E8056DFB831E55 /* Manager.swift */; };
+		BDA107E90C9C4742B6CEF56F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8923CC0E22FE8CF75835A213 /* Alamofire.swift */; };
+		DC52A516C29D73DE4E9FA1EA /* RDVTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA4182784AE16AA758D916A /* RDVTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47D076F5431C07D9F1AF7F8 /* Pods-iOutdoors-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE3AD7805BF43C4533087C5 /* Pods-iOutdoors-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DB731EF8754BB904D9481E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3856E08978E94B76E06014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 264460D7D6C7669A5B6DD4BB;
+			remoteInfo = "Pods-iOutdoors-RDVTabBarController";
+		};
+		921C1E95254C58AF5949D7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3856E08978E94B76E06014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4582FBB3B4CCE240753772;
+			remoteInfo = "Pods-iOutdoors-Alamofire";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C71D7387E5478A864D3650 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1340C1F3F11F050BB72CC449 /* Pods-iOutdoors-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		1944F072EEEBDE15AE6E3CFB /* Pods-iOutdoors-RDVTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors-RDVTabBarController.xcconfig"; sourceTree = "<group>"; };
+		1C9BBF8441C9299A6ED2E122 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
+		1DC4714B74A9574FB6F2785C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		1ED0A2941A99A15465D37148 /* Pods-iOutdoors-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOutdoors-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2287EEE1BC344E06173D1835 /* Pods-iOutdoors-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOutdoors-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		2AA4182784AE16AA758D916A /* RDVTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarItem.h; path = RDVTabBarController/RDVTabBarItem.h; sourceTree = "<group>"; };
+		2D6A676DDD408BA7E5971F90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35DAEBA65D652CB664AE41F5 /* RDVTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDVTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3714BEE43425C1C5FC1EA8A9 /* RDVTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBar.m; path = RDVTabBarController/RDVTabBar.m; sourceTree = "<group>"; };
+		3C12C47E5A7BF768A2379E58 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		3DE3AD7805BF43C4533087C5 /* Pods-iOutdoors-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		3EC3ED7C01FA9999291CFEEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C02BA20876678A075BC19B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0B13DF9C7FCD2604F8DD10 /* RDVTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarItem.m; path = RDVTabBarController/RDVTabBarItem.m; sourceTree = "<group>"; };
+		6407384CE71D3149244F4CE5 /* Pods-iOutdoors-RDVTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-RDVTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		67F563AAF71811FFDE05F258 /* Pods-iOutdoors-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOutdoors-resources.sh"; sourceTree = "<group>"; };
+		6C091286D0E8056DFB831E55 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		6C9C39AE5759A783744D7DD8 /* Pods-iOutdoors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOutdoors-dummy.m"; sourceTree = "<group>"; };
+		72BF3D1DD7956FA0068FB87D /* Pods-iOutdoors-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		73ECC90686DDB8287FF399E4 /* Pods-iOutdoors-RDVTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-RDVTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		7DBE92BCE54CA6B7D5F278D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		831CBB9BE2A30A6B9FBDCCFB /* Pods-iOutdoors-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		83752F2D07A39DC88B82AB14 /* Pods-iOutdoors-RDVTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOutdoors-RDVTabBarController-dummy.m"; sourceTree = "<group>"; };
+		86C184778AB69C8C896993F8 /* Pods-iOutdoors-RDVTabBarController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors-RDVTabBarController-Private.xcconfig"; sourceTree = "<group>"; };
+		8923CC0E22FE8CF75835A213 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		8AFE1A1DBDD92D3CCF153857 /* Pods-iOutdoors-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOutdoors-Alamofire.modulemap"; sourceTree = "<group>"; };
+		94DB8A199883587A82744FD1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9812B4143E41675CE21CEE89 /* Pods-iOutdoors-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOutdoors-frameworks.sh"; sourceTree = "<group>"; };
+		9A75E5DBAFA2D6AFA8AE6AFB /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4CFC19F1B018D89319788C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92E78593A728208B801891F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B7AD58275BD4C5E659D011 /* Pods-iOutdoors-RDVTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOutdoors-RDVTabBarController.modulemap"; sourceTree = "<group>"; };
+		B01B895324646DCD37E32445 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		C0FD2DC451A03760B329E58E /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		C9E3783CCA787AD5BD442F85 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		CA3C887E133B50E8B061AAD0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
+		CCBF130428CBCC2AAD043E34 /* Pods-iOutdoors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOutdoors.modulemap"; sourceTree = "<group>"; };
+		CCD5319458C8F1A45371949E /* Pods-iOutdoors-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-environment.h"; sourceTree = "<group>"; };
+		CFF838C28BF1AD7024097F08 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		D315B0BEA03F30BC884D0C55 /* RDVTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBarController.h; path = RDVTabBarController/RDVTabBarController.h; sourceTree = "<group>"; };
+		D3AE2CE3C75C7B9E44D1AE19 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8D5D724A97AD859ED4C4602 /* Pods-iOutdoors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOutdoors-umbrella.h"; sourceTree = "<group>"; };
+		D9E83ABB04C6A066F32CFD65 /* Pods-iOutdoors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOutdoors.release.xcconfig"; sourceTree = "<group>"; };
+		DF8E0F4110C2B922DC0EFF16 /* Pods-iOutdoors-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOutdoors-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5A90DF3DEF5B28A3D60B0D7 /* RDVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
+		F5B739AE18F7A89BC67CEE7A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06074D0AD7A4B2C2B652AFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392B93F6E88DB3C063956291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F3B98D5DD80470AB1181D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBE403D2E8871AD4DAD0B6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627973F220EC9ED030EE2E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D43A585EFE7105674F6EE05 /* CoreGraphics.framework in Frameworks */,
+				7111C7FFF119BBB9BEEB60FE /* Foundation.framework in Frameworks */,
+				B7326BF0E06AE526E378668F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3566344DC73623CBDC10B37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FD3E4FE85B7726E6161D2C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FD3E4FE85B7726E6161D2C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				06C71D7387E5478A864D3650 /* CoreGraphics.framework */,
+				2D6A676DDD408BA7E5971F90 /* Foundation.framework */,
+				7DBE92BCE54CA6B7D5F278D8 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		802364C73A0A23B39D428C2F /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E5A90DF3DEF5B28A3D60B0D7 /* RDVTabBar.h */,
+				3714BEE43425C1C5FC1EA8A9 /* RDVTabBar.m */,
+				D315B0BEA03F30BC884D0C55 /* RDVTabBarController.h */,
+				1C9BBF8441C9299A6ED2E122 /* RDVTabBarController.m */,
+				2AA4182784AE16AA758D916A /* RDVTabBarItem.h */,
+				5D0B13DF9C7FCD2604F8DD10 /* RDVTabBarItem.m */,
+				88D2F52DC94AC6D7A9A34AA1 /* Support Files */,
+			);
+			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
+		88D2F52DC94AC6D7A9A34AA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B4CFC19F1B018D89319788C /* Info.plist */,
+				A9B7AD58275BD4C5E659D011 /* Pods-iOutdoors-RDVTabBarController.modulemap */,
+				1944F072EEEBDE15AE6E3CFB /* Pods-iOutdoors-RDVTabBarController.xcconfig */,
+				86C184778AB69C8C896993F8 /* Pods-iOutdoors-RDVTabBarController-Private.xcconfig */,
+				83752F2D07A39DC88B82AB14 /* Pods-iOutdoors-RDVTabBarController-dummy.m */,
+				73ECC90686DDB8287FF399E4 /* Pods-iOutdoors-RDVTabBarController-prefix.pch */,
+				6407384CE71D3149244F4CE5 /* Pods-iOutdoors-RDVTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-iOutdoors-RDVTabBarController";
+			sourceTree = "<group>";
+		};
+		8ABC1FD5A9CB12B705745B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92E78593A728208B801891F /* Alamofire.framework */,
+				9A75E5DBAFA2D6AFA8AE6AFB /* Pods_iOutdoors.framework */,
+				35DAEBA65D652CB664AE41F5 /* RDVTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90624F568D41E2AD0B893388 /* Pods-iOutdoors */ = {
+			isa = PBXGroup;
+			children = (
+				5C02BA20876678A075BC19B1 /* Info.plist */,
+				CCBF130428CBCC2AAD043E34 /* Pods-iOutdoors.modulemap */,
+				1ED0A2941A99A15465D37148 /* Pods-iOutdoors-acknowledgements.markdown */,
+				DF8E0F4110C2B922DC0EFF16 /* Pods-iOutdoors-acknowledgements.plist */,
+				6C9C39AE5759A783744D7DD8 /* Pods-iOutdoors-dummy.m */,
+				CCD5319458C8F1A45371949E /* Pods-iOutdoors-environment.h */,
+				9812B4143E41675CE21CEE89 /* Pods-iOutdoors-frameworks.sh */,
+				67F563AAF71811FFDE05F258 /* Pods-iOutdoors-resources.sh */,
+				D8D5D724A97AD859ED4C4602 /* Pods-iOutdoors-umbrella.h */,
+				CA3C887E133B50E8B061AAD0 /* Pods-iOutdoors.debug.xcconfig */,
+				D9E83ABB04C6A066F32CFD65 /* Pods-iOutdoors.release.xcconfig */,
+			);
+			name = "Pods-iOutdoors";
+			path = "Target Support Files/Pods-iOutdoors";
+			sourceTree = "<group>";
+		};
+		AF9E0857726B040742EF4E77 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				8923CC0E22FE8CF75835A213 /* Alamofire.swift */,
+				C0FD2DC451A03760B329E58E /* Download.swift */,
+				6C091286D0E8056DFB831E55 /* Manager.swift */,
+				B01B895324646DCD37E32445 /* MultipartFormData.swift */,
+				94DB8A199883587A82744FD1 /* ParameterEncoding.swift */,
+				C9E3783CCA787AD5BD442F85 /* Request.swift */,
+				F5B739AE18F7A89BC67CEE7A /* ResponseSerialization.swift */,
+				CFF838C28BF1AD7024097F08 /* ServerTrustPolicy.swift */,
+				3C12C47E5A7BF768A2379E58 /* Upload.swift */,
+				1DC4714B74A9574FB6F2785C /* Validation.swift */,
+				BC5D659442D307FC20A99837 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B91A0A15819A6B658F5A845D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90624F568D41E2AD0B893388 /* Pods-iOutdoors */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC5D659442D307FC20A99837 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3ED7C01FA9999291CFEEE /* Info.plist */,
+				8AFE1A1DBDD92D3CCF153857 /* Pods-iOutdoors-Alamofire.modulemap */,
+				72BF3D1DD7956FA0068FB87D /* Pods-iOutdoors-Alamofire.xcconfig */,
+				1340C1F3F11F050BB72CC449 /* Pods-iOutdoors-Alamofire-Private.xcconfig */,
+				2287EEE1BC344E06173D1835 /* Pods-iOutdoors-Alamofire-dummy.m */,
+				831CBB9BE2A30A6B9FBDCCFB /* Pods-iOutdoors-Alamofire-prefix.pch */,
+				3DE3AD7805BF43C4533087C5 /* Pods-iOutdoors-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-iOutdoors-Alamofire";
+			sourceTree = "<group>";
+		};
+		C2B14599C382B5679B974509 = {
+			isa = PBXGroup;
+			children = (
+				D3AE2CE3C75C7B9E44D1AE19 /* Podfile */,
+				3566344DC73623CBDC10B37C /* Frameworks */,
+				E76892F6901FC2441D1F1CF3 /* Pods */,
+				8ABC1FD5A9CB12B705745B3C /* Products */,
+				B91A0A15819A6B658F5A845D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E76892F6901FC2441D1F1CF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E0857726B040742EF4E77 /* Alamofire */,
+				802364C73A0A23B39D428C2F /* RDVTabBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D215021342312272EFAD4E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DF5841B03F0148086A25B7 /* Pods-iOutdoors-RDVTabBarController-umbrella.h in Headers */,
+				4865D80E0184D9134F79D4F2 /* RDVTabBar.h in Headers */,
+				4BF27D1BDE1AD0BA40A87D17 /* RDVTabBarController.h in Headers */,
+				DC52A516C29D73DE4E9FA1EA /* RDVTabBarItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A168D7C70EADE89593F0C4A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD9ADEEA7275F56DD15F713 /* Pods-iOutdoors-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB3D554B775639FB69C068D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47D076F5431C07D9F1AF7F8 /* Pods-iOutdoors-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		264460D7D6C7669A5B6DD4BB /* Pods-iOutdoors-RDVTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0947F56D34BD69A70B88BFE0 /* Build configuration list for PBXNativeTarget "Pods-iOutdoors-RDVTabBarController" */;
+			buildPhases = (
+				56D4E22F1A21C67B202C2F4F /* Sources */,
+				627973F220EC9ED030EE2E62 /* Frameworks */,
+				1D215021342312272EFAD4E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iOutdoors-RDVTabBarController";
+			productName = "Pods-iOutdoors-RDVTabBarController";
+			productReference = 35DAEBA65D652CB664AE41F5 /* RDVTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97F60DB6330C6C2075489D5C /* Pods-iOutdoors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48ACEDD3235BE82C4E0803A /* Build configuration list for PBXNativeTarget "Pods-iOutdoors" */;
+			buildPhases = (
+				47FF24B4E62B926D340DB659 /* Sources */,
+				06074D0AD7A4B2C2B652AFE6 /* Frameworks */,
+				A168D7C70EADE89593F0C4A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4892ABB26903A9B48027390C /* PBXTargetDependency */,
+				F8377029E6E2BBDB26D2FE66 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOutdoors";
+			productName = "Pods-iOutdoors";
+			productReference = 9A75E5DBAFA2D6AFA8AE6AFB /* Pods_iOutdoors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE4582FBB3B4CCE240753772 /* Pods-iOutdoors-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D867E76772C18E7B10448E32 /* Build configuration list for PBXNativeTarget "Pods-iOutdoors-Alamofire" */;
+			buildPhases = (
+				4BCAEAAD5602EBF7DC1A501B /* Sources */,
+				0F3B98D5DD80470AB1181D90 /* Frameworks */,
+				BBB3D554B775639FB69C068D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iOutdoors-Alamofire";
+			productName = "Pods-iOutdoors-Alamofire";
+			productReference = A92E78593A728208B801891F /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD3856E08978E94B76E06014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = A574559BA8446551192A5524 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2B14599C382B5679B974509;
+			productRefGroup = 8ABC1FD5A9CB12B705745B3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97F60DB6330C6C2075489D5C /* Pods-iOutdoors */,
+				EE4582FBB3B4CCE240753772 /* Pods-iOutdoors-Alamofire */,
+				264460D7D6C7669A5B6DD4BB /* Pods-iOutdoors-RDVTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47FF24B4E62B926D340DB659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859567D3BAD2CE9FE710798F /* Pods-iOutdoors-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BCAEAAD5602EBF7DC1A501B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA107E90C9C4742B6CEF56F /* Alamofire.swift in Sources */,
+				A6363185591C11D984845766 /* Download.swift in Sources */,
+				BC980E5972F5BD2F3102DE16 /* Manager.swift in Sources */,
+				7ACEDDADA830E79A9E7891F3 /* MultipartFormData.swift in Sources */,
+				4581C5178CE857AB1A9C6ADB /* ParameterEncoding.swift in Sources */,
+				149625854CDF2820E7F438D9 /* Pods-iOutdoors-Alamofire-dummy.m in Sources */,
+				85BF4A4244E60706E8DDF09E /* Request.swift in Sources */,
+				2FF23F986EFC5F737DFB4DDD /* ResponseSerialization.swift in Sources */,
+				5B6F1F83C606634BED46C60F /* ServerTrustPolicy.swift in Sources */,
+				97AE95860E04397CDF4E2C98 /* Upload.swift in Sources */,
+				9CD03B06EC60969DA4DA4FB9 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D4E22F1A21C67B202C2F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E875026A4F87D99DE3C505 /* Pods-iOutdoors-RDVTabBarController-dummy.m in Sources */,
+				0D7EA312DFE80C7A3A0C4211 /* RDVTabBar.m in Sources */,
+				6F7E97512132ED709D22E180 /* RDVTabBarController.m in Sources */,
+				07D6A76355DAC3CEBD22B91C /* RDVTabBarItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4892ABB26903A9B48027390C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iOutdoors-Alamofire";
+			target = EE4582FBB3B4CCE240753772 /* Pods-iOutdoors-Alamofire */;
+			targetProxy = 921C1E95254C58AF5949D7A6 /* PBXContainerItemProxy */;
+		};
+		F8377029E6E2BBDB26D2FE66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iOutdoors-RDVTabBarController";
+			target = 264460D7D6C7669A5B6DD4BB /* Pods-iOutdoors-RDVTabBarController */;
+			targetProxy = 0DB731EF8754BB904D9481E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1978C20E63BE703C2ED05FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C184778AB69C8C896993F8 /* Pods-iOutdoors-RDVTabBarController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Pods-iOutdoors-RDVTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Pods-iOutdoors-RDVTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RDVTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CF2EAFD34D6E12ACAF8EBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA3C887E133B50E8B061AAD0 /* Pods-iOutdoors.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors/Pods-iOutdoors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_iOutdoors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F7AF9AC3C5A0C9B3D4DA1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E83ABB04C6A066F32CFD65 /* Pods-iOutdoors.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors/Pods-iOutdoors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_iOutdoors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D27FCB35E7F6F05B11B492B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1340C1F3F11F050BB72CC449 /* Pods-iOutdoors-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-iOutdoors-Alamofire/Pods-iOutdoors-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors-Alamofire/Pods-iOutdoors-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7523744D75146F67B62FF569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1340C1F3F11F050BB72CC449 /* Pods-iOutdoors-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-iOutdoors-Alamofire/Pods-iOutdoors-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors-Alamofire/Pods-iOutdoors-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C40CBD8CBF3EC534FCBBDBB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9A3EC2D252E5BC44CBB07DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C184778AB69C8C896993F8 /* Pods-iOutdoors-RDVTabBarController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Pods-iOutdoors-RDVTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-iOutdoors-RDVTabBarController/Pods-iOutdoors-RDVTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RDVTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4E07AF4E018F85E067DF373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0947F56D34BD69A70B88BFE0 /* Build configuration list for PBXNativeTarget "Pods-iOutdoors-RDVTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1978C20E63BE703C2ED05FD9 /* Debug */,
+				D9A3EC2D252E5BC44CBB07DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A574559BA8446551192A5524 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E07AF4E018F85E067DF373 /* Debug */,
+				C40CBD8CBF3EC534FCBBDBB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48ACEDD3235BE82C4E0803A /* Build configuration list for PBXNativeTarget "Pods-iOutdoors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF2EAFD34D6E12ACAF8EBD2 /* Debug */,
+				3F7AF9AC3C5A0C9B3D4DA1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D867E76772C18E7B10448E32 /* Build configuration list for PBXNativeTarget "Pods-iOutdoors-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7523744D75146F67B62FF569 /* Debug */,
+				5D27FCB35E7F6F05B11B492B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD3856E08978E94B76E06014 /* Project object */;
+}
