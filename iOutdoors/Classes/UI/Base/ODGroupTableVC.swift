@@ -12,7 +12,7 @@ import UIKit
 
 class ODGroupTableVC : ODBaseViewController,UITableViewDelegate,UITableViewDataSource{
     
-    var tableView : UITableView! = UITableView(frame: CGRectZero, style: .Grouped);;
+    var tableView : UITableView! = UITableView(frame: CGRectZero, style: .Grouped)
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {

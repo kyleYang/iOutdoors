@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279F786C1B74A15D007257D1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F786B1B74A15D007257D1 /* UIColor+Extension.swift */; };
 		27BF4A641B72F0CB00810756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27BF4A661B72F0CB00810756 /* InfoPlist.strings */; };
 		27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A691B72FCE100810756 /* BaseObject.swift */; };
 		27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A6B1B73068900810756 /* ODGroupTableVC.swift */; };
 		27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A701B7347FE00810756 /* UIHelper.swift */; };
 		27BF4A731B7351D100810756 /* UserCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A721B7351D100810756 /* UserCenterVC.swift */; };
 		27BF4A751B73522700810756 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A741B73522700810756 /* HomeVC.swift */; };
+		27BF4A781B74628800810756 /* InfinitePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A771B74628800810756 /* InfinitePageView.swift */; };
+		27BF4A7A1B74978A00810756 /* KYPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A791B74978A00810756 /* KYPageController.swift */; };
+		27BF4A7F1B74998200810756 /* KYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A7E1B74998200810756 /* KYUtil.swift */; };
 		27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62271B7206270033EDB2 /* AppDelegate.swift */; };
 		27FD622B1B7206270033EDB2 /* iOutdoors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62291B7206270033EDB2 /* iOutdoors.xcdatamodeld */; };
 		27FD622D1B7206270033EDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD622C1B7206270033EDB2 /* ViewController.swift */; };
@@ -38,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
+		279F786B1B74A15D007257D1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		27BF4A611B72F09C00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		27BF4A651B72F0CB00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27BF4A671B72F0CF00810756 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		27BF4A701B7347FE00810756 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		27BF4A721B7351D100810756 /* UserCenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCenterVC.swift; sourceTree = "<group>"; };
 		27BF4A741B73522700810756 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		27BF4A771B74628800810756 /* InfinitePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
+		27BF4A791B74978A00810756 /* KYPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPageController.swift; sourceTree = "<group>"; };
+		27BF4A7E1B74998200810756 /* KYUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYUtil.swift; sourceTree = "<group>"; };
 		27FD62221B7206270033EDB2 /* iOutdoors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOutdoors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FD62261B7206270033EDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FD62271B7206270033EDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,15 +108,50 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		27BF4A761B74590400810756 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A771B74628800810756 /* InfinitePageView.swift */,
+				27BF4A791B74978A00810756 /* KYPageController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27BF4A7B1B74992500810756 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27BF4A7E1B74998200810756 /* KYUtil.swift */,
+				279F786B1B74A15D007257D1 /* UIColor+Extension.swift */,
+			);
+			name = Common;
+			path = ../Common;
+			sourceTree = "<group>";
+		};
+		27BF4A7C1B74992500810756 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Platform;
+			path = ../Platform;
+			sourceTree = "<group>";
+		};
+		27BF4A7D1B74992500810756 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
 		27FD62191B7206270033EDB2 = {
 			isa = PBXGroup;
 			children = (
+				27BF4A7B1B74992500810756 /* Common */,
+				27BF4A7C1B74992500810756 /* Platform */,
+				27BF4A7D1B74992500810756 /* Vendor */,
 				27FD62241B7206270033EDB2 /* iOutdoors */,
 				27FD623D1B7206270033EDB2 /* iOutdoorsTests */,
 				27FD62231B7206270033EDB2 /* Products */,
-				27FD624A1B720D180033EDB2 /* Common */,
-				27FD624B1B720D180033EDB2 /* Platform */,
-				27FD624C1B720D180033EDB2 /* Vendor */,
 				2D947C4F7431DE4062D2D28C /* Pods */,
 				EBF6B50F0646287F39F3314D /* Frameworks */,
 			);
@@ -166,27 +209,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		27FD624A1B720D180033EDB2 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27FD624B1B720D180033EDB2 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		27FD624C1B720D180033EDB2 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		27FD624D1B720E420033EDB2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +254,7 @@
 		27FD62521B720E420033EDB2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				27BF4A761B74590400810756 /* Common */,
 				27FD62591B7215080033EDB2 /* Base */,
 				27FD62571B7214D90033EDB2 /* Activity */,
 				27FD62581B7214D90033EDB2 /* Compete */,
@@ -457,7 +480,11 @@
 				27BF4A751B73522700810756 /* HomeVC.swift in Sources */,
 				27FD62541B7211780033EDB2 /* TabBarController.swift in Sources */,
 				27FD622B1B7206270033EDB2 /* iOutdoors.xcdatamodeld in Sources */,
+				27BF4A781B74628800810756 /* InfinitePageView.swift in Sources */,
 				27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */,
+				27BF4A7F1B74998200810756 /* KYUtil.swift in Sources */,
+				279F786C1B74A15D007257D1 /* UIColor+Extension.swift in Sources */,
+				27BF4A7A1B74978A00810756 /* KYPageController.swift in Sources */,
 				27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */,
 				27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */,
 				27FD625B1B7215250033EDB2 /* ODBaseViewController.swift in Sources */,
