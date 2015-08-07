@@ -24,7 +24,6 @@ class UIHelper : NSObject {
         var tabBarItemImages = ["cate_home","cate_user"]
         var tabBarHightImages = ["cate_home_hilight","cate_user_hilight"]
         
-        
         for var i = 0; i<tabBarController.tabBar.items.count; i++ {
             
             var item: RDVTabBarItem = tabBarController.tabBar.items[i] as! RDVTabBarItem
@@ -40,13 +39,8 @@ class UIHelper : NSObject {
             item.unselectedTitleAttributes = [NSFontAttributeName:UIFont.systemFontOfSize(10)]
             item.selectedTitleAttributes = [NSFontAttributeName:UIFont.boldSystemFontOfSize(10)]
             
-
-    
-            
         }
         
-        
-
         return tabBarController
         
     }
