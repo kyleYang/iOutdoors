@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1182BEC83BB692E20EF5EF19 /* Pods_iOutdoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		188883DF1B751E180001FBDE /* KYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188883DE1B751E180001FBDE /* KYUtil.swift */; };
 		27BF4A641B72F0CB00810756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27BF4A661B72F0CB00810756 /* InfoPlist.strings */; };
 		27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A691B72FCE100810756 /* BaseObject.swift */; };
@@ -26,7 +27,6 @@
 		27FD62541B7211780033EDB2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD62531B7211780033EDB2 /* TabBarController.swift */; };
 		27FD625B1B7215250033EDB2 /* ODBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD625A1B7215250033EDB2 /* ODBaseViewController.swift */; };
 		27FD62611B72F05B0033EDB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27FD62631B72F05B0033EDB2 /* Localizable.strings */; };
-		570A02646A3421AE3F1AB8C4 /* Pods_iOutdoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
+		1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188883DE1B751E180001FBDE /* KYUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYUtil.swift; sourceTree = "<group>"; };
 		27BF4A611B72F09C00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		27BF4A651B72F0CB00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		27FD625E1B72178A0033EDB2 /* iOutDoors-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOutDoors-Prefix.pch"; sourceTree = "<group>"; };
 		27FD62651B72F0780033EDB2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1A978053C5249655A3E3EFC /* Pods-iOutdoors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.release.xcconfig"; sourceTree = "<group>"; };
-		E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570A02646A3421AE3F1AB8C4 /* Pods_iOutdoors.framework in Frameworks */,
+				1182BEC83BB692E20EF5EF19 /* Pods_iOutdoors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +313,7 @@
 		EBF6B50F0646287F39F3314D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E91412FE454134CF74E340BF /* Pods_iOutdoors.framework */,
+				1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				27FD621F1B7206270033EDB2 /* Frameworks */,
 				27FD62201B7206270033EDB2 /* Resources */,
 				9C6D1AB05C0D65F68BF3DA21 /* Copy Pods Resources */,
-				5848838DF796223356C7CAED /* Embed Pods Frameworks */,
+				2D09C0C7364C77F441414E3A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,7 +436,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5848838DF796223356C7CAED /* Embed Pods Frameworks */ = {
+		2D09C0C7364C77F441414E3A /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

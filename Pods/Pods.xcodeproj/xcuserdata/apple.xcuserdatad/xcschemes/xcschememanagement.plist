@@ -4,35 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-iOutdoors-Alamofire.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-iOutdoors-RDVTabBarController.xcscheme</key>
+		<key>Cartography.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-iOutdoors.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RDVTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>264460D7D6C7669A5B6DD4BB</key>
+		<key>689619DC95116EBBA783A46E30615E7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97F60DB6330C6C2075489D5C</key>
+		<key>7DA951F0D32255A1FB37877A67680329</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE4582FBB3B4CCE240753772</key>
+		<key>B0BBFD13EB1E32BFF1056E7C59B8F324</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEC2EC88F3B7370819F3C1B49E04638D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
