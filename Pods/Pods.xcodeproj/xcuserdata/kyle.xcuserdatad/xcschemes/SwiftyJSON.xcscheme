@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7CF4B2732DC77A72BECBA7C7"
-               BuildableName = "Pods_iOutdoors.framework"
-               BlueprintName = "Pods-iOutdoors"
+               BlueprintIdentifier = "E14F2E803C9F1F01C08FA621"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

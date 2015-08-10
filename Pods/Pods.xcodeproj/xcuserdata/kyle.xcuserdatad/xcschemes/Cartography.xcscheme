@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7CF4B2732DC77A72BECBA7C7"
-               BuildableName = "Pods_iOutdoors.framework"
-               BlueprintName = "Pods-iOutdoors"
+               BlueprintIdentifier = "D54B25C7ADB7284916309364"
+               BuildableName = "Cartography.framework"
+               BlueprintName = "Cartography"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

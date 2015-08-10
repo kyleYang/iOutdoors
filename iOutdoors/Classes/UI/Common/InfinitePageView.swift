@@ -1,5 +1,5 @@
 //
-//  InfinitePageView.swift
+//  InfinitescrollView.swift
 //  iOutdoors
 //
 //  Created by Kyle on 15/8/7.
@@ -12,14 +12,17 @@ import UIKit
 
 private let pageControlHeight : CGFloat = 20.0 // pagecontroller height
 private let timeInterval : NSTimeInterval = 5
+private let defualtIdentifier : String = "defaultidentifier"
 
 
-//MARK: InfinitPageViewDelegate
-protocol InfinitPageViewDelegate : NSObjectProtocol {
+//MARK: InfinitscrollViewDelegate
+@objc protocol InfinitPageViewDelegate : NSObjectProtocol {
     
-    func numberOfCellInInfinitPageView(pageView: InfinitePageView) -> Int
-    func infinitPageView(pageView: InfinitePageView, cellForRowAtIndex index: Int) -> UITableViewCell
+    func numberOfCellInInfinitPageView(scrollView: InfinitePageView) -> Int
+    func infinitPageView(scrollView: InfinitePageView,frame:CGRect ,cellForRowAtIndex index: Int) -> InfinitPageViewCell
     
+    optional func infinitPageView(scrollView: InfinitePageView, didTapIndex index:Int)
+    optional func infinitPageView(scrollView: InfinitePageView, currentIndex index:Int)
 }
 
 
@@ -68,12 +71,12 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     var delegate: InfinitPageViewDelegate?
     
-    private(set) var pageView: UIScrollView! = UIScrollView(frame: CGRectZero)
+    private(set) var scrollView: UIScrollView! = UIScrollView(frame: CGRectZero)
     private var pageControl : KYPageController!
     
     private var onScreenCells : Array<InfinitPageViewCell>! = Array()
     private var onScreenTags : Array<NSInteger>! = Array()
-    private var saveCells : Dictionary<NSString,Array<InfinitPageViewCell>>! = [:]
+    private var saveCells : Dictionary<String,Array<InfinitPageViewCell>>! = [:]
     
    
     
@@ -127,19 +130,21 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         if total==0 {
             return
         }else if total==1{
-            self.pageView.contentOffset = CGPointMake(0, 0)
-            self.pageView.contentSize = CGSizeMake(CGRectGetWidth(self.pageView.frame)*2, CGRectGetHeight(self.pageView.frame))
+            self.scrollView.contentOffset = CGPointMake(0, 0)
+            self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.scrollView.frame)*2, CGRectGetHeight(self.scrollView.frame))
+            self.loadSingleView()
+            
         }else{
-            self.pageView.contentOffset = CGPointMake(CGRectGetWidth(self.pageView.frame), 0)
-            self.pageView.contentSize = CGSizeMake(CGRectGetWidth(self.pageView.frame)*3, CGRectGetHeight(self.pageView.frame))
+            self.scrollView.contentOffset = CGPointMake(CGRectGetWidth(self.scrollView.frame), 0)
+            self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.scrollView.frame)*3, CGRectGetHeight(self.scrollView.frame))
+            self.loadViews()
         }
         
-        self.loadViews()
         self.resumeTimer()
         
     }
     
-    func dequeueCellWithIdentifier(identifier:NSString) ->InfinitPageViewCell?{
+    func dequeueCellWithIdentifier(identifier:String) ->InfinitPageViewCell?{
         
         if !self.saveCells.isEmpty {
             var array : Array<InfinitPageViewCell> = self.saveCells[identifier]!
@@ -156,7 +161,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     func queueContentCell(cell : InfinitPageViewCell){
         
-        var identifier : NSString = cell.identifier;
+        var identifier : String = cell.identifier;
         var array : Array<InfinitPageViewCell> = self.saveCells[identifier]!
         if !array.isEmpty {
             array.append(cell)
@@ -167,22 +172,22 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
             
         }
         
-        
     }
+    
     
     private func setupViews(){
         
-        //init pageview
-        pageView.frame = self.bounds
-        pageView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
-        pageView.delegate = self
-        pageView.backgroundColor = UIColor.clearColor()
-        pageView.clipsToBounds = true
-        pageView.pagingEnabled = true
-        pageView.scrollEnabled = true
-        pageView.showsVerticalScrollIndicator = false
-        pageView.showsHorizontalScrollIndicator = true
-        self.addSubview(pageView)
+        //init scrollView
+        scrollView.frame = self.bounds
+        scrollView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        scrollView.delegate = self
+        scrollView.backgroundColor = UIColor.clearColor()
+        scrollView.clipsToBounds = true
+        scrollView.pagingEnabled = true
+        scrollView.scrollEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = true
+        self.addSubview(scrollView)
         
         pageControl = KYPageController(frame: CGRectMake(0, CGRectGetHeight(pageControl.frame)-pageControlHeight, CGRectGetWidth(pageControl.frame), pageControlHeight))
         pageControl.normalImage = UIImage(named: "recom_off")
@@ -192,8 +197,139 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     }
     
+    //The total pages == 1
+    private func loadSingleView(){
+        
+        var frame = CGRectMake(0,0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
+        
+        var cell : InfinitPageViewCell? = delegate?.infinitPageView(self, frame: frame, cellForRowAtIndex: 0)
+        if cell == nil{
+            cell = InfinitPageViewCell(frame: frame, identifier: defualtIdentifier)
+        }
+        cell?.frame = frame
+        cell?.tag = 0
+        
+        
+        if let gestures = cell?.gestureRecognizers{
+            for gesture in gestures{
+                cell?.removeGestureRecognizer(gesture as! UIGestureRecognizer)
+            }
+        }
+        
+        var singleTap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+        cell?.addGestureRecognizer(singleTap)
+            
+        cell?.viewWillAppear()
+        self.scrollView.addSubview(cell!)
+        cell?.viewDidAppear()
+
+        self.onScreenCells.append(cell!)
+
+        
+    }
+    
     private func loadViews(){
         
+        self.getDisplayImagesWithPage(currentPage)//移掉划出屏幕外的图片 保存3个
+        
+    
+        var readyRemove : Array<InfinitPageViewCell>! = Array()
+        
+    
+        for cell in self.onScreenCells{
+            
+            var onScreen:Bool = false
+            
+            for subtag in self.onScreenTags{
+                if subtag == cell.cellTag {
+                    onScreen = true
+                    break
+                }
+
+            }
+            
+            if !onScreen {
+                readyRemove.append(cell)
+            }
+            
+        }
+        
+    
+        for cell in readyRemove {
+            
+            self.queueContentCell(cell)
+            cell.viewWillDisappear()
+            self.onScreenCells.removeObject(cell)
+            cell.viewWillDisappear()
+            
+        }
+        
+    
+
+        //遍历图片数组
+        for i in self.onScreenTags{
+            
+            var onscreen : Bool = true
+            var onTag = self.onScreenTags[i]
+            
+            if onscreen {
+                
+                var hasOneScreen : Bool = false
+                for vi in self.onScreenCells {
+                    
+                    if onTag == vi.cellTag {
+                        
+                        hasOneScreen = true
+                        vi.setX(CGRectGetWidth(self.scrollView.frame)*CGFloat(i))
+                    }
+                }
+                
+                if !hasOneScreen {
+                    
+                    var frame: CGRect = CGRectMake(CGRectGetWidth(self.scrollView.frame)*CGFloat(i),0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
+                    var cell : InfinitPageViewCell?
+                    if total==2{
+                        if onTag == -1{
+                            cell = delegate?.infinitPageView(self, frame: frame, cellForRowAtIndex: 1)
+                        }else if onTag == 2{
+                            cell = delegate?.infinitPageView(self, frame: frame, cellForRowAtIndex: 0)
+                        }else{
+                            cell = delegate?.infinitPageView(self, frame: frame, cellForRowAtIndex: onTag)
+                        }
+                    }else{
+                        cell = delegate?.infinitPageView(self, frame: frame, cellForRowAtIndex: onTag)
+                    }
+                    
+                    if cell == nil{
+                        cell = InfinitPageViewCell(frame: frame, identifier: defualtIdentifier)
+                    }
+                    
+                    cell?.frame = frame
+                    cell?.cellTag = onTag
+                    
+                    
+                    if let gestures = cell?.gestureRecognizers{
+                        for gesture in gestures{
+                            cell?.removeGestureRecognizer(gesture as! UIGestureRecognizer)
+                        }
+                    }
+                    
+                    var singleTap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+                    cell?.addGestureRecognizer(singleTap)
+                    
+                    cell?.viewWillAppear()
+                    self.scrollView.addSubview(cell!)
+                    cell?.viewDidAppear()
+                    
+                    self.onScreenCells.append(cell!)
+
+                }
+                
+            }
+            
+        }
+        
+        self.scrollView.contentOffset = CGPointMake(CGRectGetWidth(self.scrollView.frame), 0)
         
     }
     
@@ -226,7 +362,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     @objc private func doAutoLoop(){
         
-        self.pageView.setContentOffset(CGPointMake(CGRectGetWidth(self.pageView.frame)*2, 0), animated: true)
+        self.scrollView.setContentOffset(CGPointMake(CGRectGetWidth(self.scrollView.frame)*2, 0), animated: true)
     }
     
     
@@ -269,7 +405,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         return valueNew;
     }
     
-    private func getDisplayImagesWith(Page page:NSInteger) -> Array<NSInteger>{
+    private func getDisplayImagesWithPage(page:NSInteger) -> Array<NSInteger>{
         
         var pre = self.validCurrPageValue(page-1)
         var last = self.validCurrPageValue(page+1)
@@ -313,33 +449,19 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         self.pageControl.current = currentPage
         scrollView.setContentOffset(CGPointMake(CGRectGetWidth(scrollView.frame), 0), animated: true)
         
+        delegate?.infinitPageView?(self, currentIndex: currentPage)
+        
+        self.resumeTimer()
         
     }
     
     
-//    - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-//    
-//    //    BqsLog(@"MptContentScrollView current index : %d",_curPage);
-//    self.pageControl.currentPage = _curPage;
-//    [scrollView setContentOffset:CGPointMake(CGRectGetWidth(scrollView.frame), 0) animated:YES];
-//    
-//    if (_dataSource && [_dataSource respondsToSelector:@selector(recommenView:curIndex:)]) {
-//    [_dataSource recommenView:self curIndex:_curPage];
-//    }
-//    [self resumeTimer];
-//    
-//    
-//    }
-//    
-//    
-//    - (void)handleTap:(UITapGestureRecognizer *)tap {
-//    DDLogVerbose(@"handleTap curpage :%lu", _curPage);
-//    if ([_delegate respondsToSelector:@selector(recommenView:didSelectIndex:)]) {
-//    [_delegate recommenView:self didSelectIndex:_curPage];
-//    }
-//    }
-//
+    //MARK: hand tap gesture
     
+    private func handleTap(gestureRecognizer : UIGestureRecognizer){
+        
+        delegate?.infinitPageView?(self, didTapIndex: currentPage)
+    }
 
 
 

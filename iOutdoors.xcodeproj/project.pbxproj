@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1182BEC83BB692E20EF5EF19 /* Pods_iOutdoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		188883DF1B751E180001FBDE /* KYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188883DE1B751E180001FBDE /* KYUtil.swift */; };
+		2717F9B21B782B0D00B83281 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717F9B11B782B0D00B83281 /* UIColor+Extension.swift */; };
+		2717F9B41B782B5500B83281 /* KYMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717F9B31B782B5500B83281 /* KYMath.swift */; };
+		2717F9B61B78A8C000B83281 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717F9B51B78A8C000B83281 /* Array+Extension.swift */; };
+		2717F9B81B78AAB800B83281 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717F9B71B78AAB800B83281 /* UIView+Extension.swift */; };
 		27BF4A641B72F0CB00810756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27BF4A661B72F0CB00810756 /* InfoPlist.strings */; };
 		27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A691B72FCE100810756 /* BaseObject.swift */; };
 		27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF4A6B1B73068900810756 /* ODGroupTableVC.swift */; };
@@ -43,6 +47,10 @@
 		0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
 		1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188883DE1B751E180001FBDE /* KYUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYUtil.swift; sourceTree = "<group>"; };
+		2717F9B11B782B0D00B83281 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2717F9B31B782B5500B83281 /* KYMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYMath.swift; sourceTree = "<group>"; };
+		2717F9B51B78A8C000B83281 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		2717F9B71B78AAB800B83281 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		27BF4A611B72F09C00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		27BF4A651B72F0CB00810756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27BF4A671B72F0CF00810756 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -94,6 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				188883DE1B751E180001FBDE /* KYUtil.swift */,
+				2717F9B11B782B0D00B83281 /* UIColor+Extension.swift */,
+				2717F9B31B782B5500B83281 /* KYMath.swift */,
+				2717F9B51B78A8C000B83281 /* Array+Extension.swift */,
+				2717F9B71B78AAB800B83281 /* UIView+Extension.swift */,
 			);
 			name = Common;
 			path = iOutdoors/Common;
@@ -474,12 +486,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FD622D1B7206270033EDB2 /* ViewController.swift in Sources */,
+				2717F9B41B782B5500B83281 /* KYMath.swift in Sources */,
 				27BF4A751B73522700810756 /* HomeVC.swift in Sources */,
 				27FD62541B7211780033EDB2 /* TabBarController.swift in Sources */,
 				27FD622B1B7206270033EDB2 /* iOutdoors.xcdatamodeld in Sources */,
 				27BF4A781B74628800810756 /* InfinitePageView.swift in Sources */,
 				27BF4A6C1B73068900810756 /* ODGroupTableVC.swift in Sources */,
+				2717F9B81B78AAB800B83281 /* UIView+Extension.swift in Sources */,
+				2717F9B61B78A8C000B83281 /* Array+Extension.swift in Sources */,
 				188883DF1B751E180001FBDE /* KYUtil.swift in Sources */,
+				2717F9B21B782B0D00B83281 /* UIColor+Extension.swift in Sources */,
 				27BF4A7A1B74978A00810756 /* KYPageController.swift in Sources */,
 				27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */,
 				27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */,
