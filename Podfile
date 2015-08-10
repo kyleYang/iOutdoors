@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'iOutdoors' do
 platform :ios, '8.0'
 pod 'RDVTabBarController', '~> 1.1.9'
-
+pod 'SDWebImage', '~> 3.7.3'
 use_frameworks!
 pod 'Alamofire', '~> 1.3'
 pod 'SwiftyJSON', '~> 2.2.1'

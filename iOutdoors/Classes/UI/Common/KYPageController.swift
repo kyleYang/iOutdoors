@@ -13,37 +13,22 @@ class KYPageController : UIView  {
     
     //MARK:-------------------
     //MARK: override property
-    var borderColor : UIColor!{
+    var borderColor : UIColor! = UIColor.clearColor(){
         
-        get{
-            return self.borderColor ?? UIColor.clearColor()
-        }
-        
-        set(color){
-            self.borderColor = color
+        didSet{
             self.setNeedsDisplay()
         }
     }
-    var hilightColor : UIColor?{
+    var hilightColor : UIColor? = UIColorFromRGB(0xee766a){
         
-        get{
-            return self.hilightColor ?? UIColorFromRGB(0xee766a)
-        }
-        
-        set(color){
-            self.hilightColor = color
+        didSet{
             self.setNeedsDisplay()
         }
         
     }
-    var normalColor : UIColor?{
-        
-        get{
-            return self.normalColor ?? UIColor.darkGrayColor()
-        }
-        
-        set(color){
-            self.normalColor = color
+    var normalColor : UIColor? = UIColor.darkGrayColor(){
+
+        didSet(color){
             self.setNeedsDisplay()
         }
         
@@ -52,73 +37,46 @@ class KYPageController : UIView  {
     
     var hilightImage : UIImage?{
         
-        get{
-            return self.hilightImage
-        }
-        
-        set(image){
-            self.hilightImage = image
+        didSet{
             self.setNeedsDisplay()
         }
         
     }
     var normalImage : UIImage?{
         
-        get{
-            return self.normalImage
-        }
-        
-        set(image){
-            self.normalImage = image
+        didSet{
+
             self.setNeedsDisplay()
         }
         
     }
 
-    var dotWidth : CGFloat!{
+    var dotWidth : CGFloat! = 5.0{
         
-        get{
-            return self.dotWidth ?? 5.0
-        }
-        
-        set(width){
-            self.dotWidth = width
+        didSet{
             self.setNeedsDisplay()
         }
         
     }
     
-    var dotSpace : CGFloat!{
+    var dotSpace : CGFloat! = 5.0{
         
-        get{
-            return self.dotSpace ?? 5.0
-        }
-        
-        set(space){
-            self.dotSpace = space
+        didSet{
             self.setNeedsDisplay()
         }
         
     }
     
     var current : Int? {
-       
-        get{
-            return self.current
-        }
-        set(cur){
-            self.current = cur
+    
+        didSet(cur){
             self.setNeedsDisplay()
         }
         
     }
-    var pageNumber : Int! {
-    
-        get{
-            return self.pageNumber
-        }
-        set(number){
-            self.pageNumber = number
+    var pageNumber : Int! = 0{
+
+        didSet{
             self.setNeedsDisplay()
         }
     
@@ -127,6 +85,7 @@ class KYPageController : UIView  {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = UIColor.clearColor()
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -147,7 +106,7 @@ class KYPageController : UIView  {
         var currentBounds : CGRect! = self.bounds
         var dotsWidth : CGFloat = CGFloat(pageNumber) * dotWidth + CGFloat(max(0,(pageNumber-1)))*dotSpace!
         var x = CGRectGetMidX(currentBounds) - CGFloat(dotsWidth/2)
-        var y = CGRectGetMinY(currentBounds) - CGFloat(dotWidth/2)
+        var y = CGRectGetHeight(currentBounds)/2 - CGFloat(dotWidth/2)
         
         
         for i in 0..<pageNumber {

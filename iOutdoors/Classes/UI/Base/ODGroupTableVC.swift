@@ -43,7 +43,7 @@ class ODGroupTableVC : ODBaseViewController,UITableViewDelegate,UITableViewDataS
         tableView.dataSource = self
         tableView.sectionHeaderHeight = 0
         tableView.sectionFooterHeight = 0
-        
+        self.view.addSubview(tableView)
         
         
         

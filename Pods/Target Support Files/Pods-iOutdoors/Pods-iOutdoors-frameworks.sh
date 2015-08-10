@@ -55,11 +55,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-iOutdoors/Alamofire.framework'
   install_framework 'Pods-iOutdoors/Cartography.framework'
   install_framework 'Pods-iOutdoors/RDVTabBarController.framework'
+  install_framework 'Pods-iOutdoors/SDWebImage.framework'
   install_framework 'Pods-iOutdoors/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-iOutdoors/Alamofire.framework'
   install_framework 'Pods-iOutdoors/Cartography.framework'
   install_framework 'Pods-iOutdoors/RDVTabBarController.framework'
+  install_framework 'Pods-iOutdoors/SDWebImage.framework'
   install_framework 'Pods-iOutdoors/SwiftyJSON.framework'
 fi

@@ -69,7 +69,12 @@ class InfinitPageViewCell : UIView{
 //MARK: InfinitePageView
 class InfinitePageView : UIView,UIScrollViewDelegate {
     
-    var delegate: InfinitPageViewDelegate?
+    var delegate: InfinitPageViewDelegate?{
+        
+        didSet{
+            self.reloadData()
+        }
+    }
     
     private(set) var scrollView: UIScrollView! = UIScrollView(frame: CGRectZero)
     private var pageControl : KYPageController!
@@ -162,14 +167,15 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     func queueContentCell(cell : InfinitPageViewCell){
         
         var identifier : String = cell.identifier;
-        var array : Array<InfinitPageViewCell> = self.saveCells[identifier]!
-        if !array.isEmpty {
-            array.append(cell)
+        
+        if let array = self.saveCells[identifier]{
+            var mutableArray = array
+            mutableArray.append(cell)
+           
         }else{
-            array = []
-            array.append(cell)
-            self.saveCells[identifier] = array
-            
+            var arrayNew : Array<InfinitPageViewCell> = []
+            arrayNew.append(cell)
+            self.saveCells[identifier] = arrayNew
         }
         
     }
@@ -186,10 +192,10 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         scrollView.pagingEnabled = true
         scrollView.scrollEnabled = true
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = true
+        scrollView.showsHorizontalScrollIndicator = false
         self.addSubview(scrollView)
         
-        pageControl = KYPageController(frame: CGRectMake(0, CGRectGetHeight(pageControl.frame)-pageControlHeight, CGRectGetWidth(pageControl.frame), pageControlHeight))
+        pageControl = KYPageController(frame: CGRectMake(0, CGRectGetHeight(self.frame)-pageControlHeight, CGRectGetWidth(self.frame), pageControlHeight))
         pageControl.normalImage = UIImage(named: "recom_off")
         pageControl.hilightImage = UIImage(named: "recom_on")
         pageControl.dotWidth = 8
@@ -267,7 +273,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
 
         //遍历图片数组
-        for i in self.onScreenTags{
+        for i in 0..<self.onScreenTags.count{
             
             var onscreen : Bool = true
             var onTag = self.onScreenTags[i]
@@ -351,7 +357,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         if total<2 {
             return
         }
-        if self.timer == nil{
+        if self.timer != nil{
             return
         }
         self.timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: Selector("doAutoLoop"), userInfo: nil, repeats: true)
