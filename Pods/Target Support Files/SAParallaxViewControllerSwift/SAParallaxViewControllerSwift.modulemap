@@ -1,0 +1,6 @@
+framework module SAParallaxViewControllerSwift {
+  umbrella header "SAParallaxViewControllerSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

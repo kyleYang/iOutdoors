@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOutdoors/Classes/UI/Common/InfinitePageView.swift"
-            timestampString = "460919675.082315"
+            timestampString = "460955766.097919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
-            landmarkName = "loadViews()"
+            startingLineNumber = "469"
+            endingLineNumber = "469"
+            landmarkName = "handleTap(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOutdoors/Classes/UI/Common/InfinitePageView.swift"
-            timestampString = "460919751.127054"
+            filePath = "iOutdoors/Classes/UI/Common/UIScrollView+KYParallaxHeaderView.swift"
+            timestampString = "461432560.010981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
-            landmarkName = "resumeTimer()"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "addContentViewModeFillConstraints()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOutdoors/Classes/UI/Common/UIScrollView+KYParallaxHeaderView.swift"
+            timestampString = "461432560.010981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOutdoors/Classes/UI/Common/UIScrollView+KYParallaxHeaderView.swift"
+            timestampString = "461432738.090771"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "init(scrollview:contentView:modeValue:height:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

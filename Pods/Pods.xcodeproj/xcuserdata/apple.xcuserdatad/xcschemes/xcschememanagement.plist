@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAParallaxViewControllerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>139470C9A54CE65C51558766D90445C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28C5731E039C85EBE442450B59DA07C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A7B87B8A48FB9796ACB6B5E10002A7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9666688CB41B38A9914616144C9C7A3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB448409B529E27E2234A460580A2B3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,21 +73,6 @@
 			<true/>
 		</dict>
 		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CCEC2E9901AB19BC5BC5106B6F85DAF9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DFE7D60D9BAB65BAE5AABA8A9C3CE4C8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FAB3151F27DB94B53AD4F29C2F659C7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

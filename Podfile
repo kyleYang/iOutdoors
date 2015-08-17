@@ -9,6 +9,7 @@ use_frameworks!
 pod 'Alamofire', '~> 1.3'
 pod 'SwiftyJSON', '~> 2.2.1'
 pod 'Cartography', '~> 0.5.0'
+pod 'SAParallaxViewControllerSwift', '~> 1.2.0'
 end
 
 target 'iOutdoorsTests' do

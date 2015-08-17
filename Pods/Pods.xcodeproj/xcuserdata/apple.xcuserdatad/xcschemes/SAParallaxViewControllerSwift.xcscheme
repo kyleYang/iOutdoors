@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3432D71D76562B77292171D3"
-               BuildableName = "RDVTabBarController.framework"
-               BlueprintName = "RDVTabBarController"
+               BlueprintIdentifier = "164CC6B46BB5844168DF8244"
+               BuildableName = "SAParallaxViewControllerSwift.framework"
+               BlueprintName = "SAParallaxViewControllerSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

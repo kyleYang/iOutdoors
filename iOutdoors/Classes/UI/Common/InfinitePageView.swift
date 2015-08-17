@@ -103,7 +103,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+
     
     //MARK: public method
     
@@ -136,7 +136,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
             return
         }else if total==1{
             self.scrollView.contentOffset = CGPointMake(0, 0)
-            self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.scrollView.frame)*2, CGRectGetHeight(self.scrollView.frame))
+            self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame))
             self.loadSingleView()
             
         }else{
@@ -266,6 +266,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
             self.queueContentCell(cell)
             cell.viewWillDisappear()
             self.onScreenCells.removeObject(cell)
+            cell.removeFromSuperview()
             cell.viewWillDisappear()
             
         }
@@ -386,7 +387,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     private func validPageValue(value: NSInteger) ->NSInteger{
         
-        var valueNew : NSInteger! = 0
+        var valueNew : NSInteger! = value
         
         if value == -1 {
             if total == 2 {
@@ -413,8 +414,8 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     private func getDisplayImagesWithPage(page:NSInteger) -> Array<NSInteger>{
         
-        var pre = self.validCurrPageValue(page-1)
-        var last = self.validCurrPageValue(page+1)
+        var pre = self.validPageValue(page-1)
+        var last = self.validPageValue(page+1)
         
         if self.onScreenTags.count != 0{
             self.onScreenTags.removeAll(keepCapacity: true)
@@ -464,7 +465,7 @@ class InfinitePageView : UIView,UIScrollViewDelegate {
     
     //MARK: hand tap gesture
     
-    private func handleTap(gestureRecognizer : UIGestureRecognizer){
+    @objc private func handleTap(gestureRecognizer : UIGestureRecognizer){
         
         delegate?.infinitPageView?(self, didTapIndex: currentPage)
     }

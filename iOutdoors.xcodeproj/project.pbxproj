@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1182BEC83BB692E20EF5EF19 /* Pods_iOutdoors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1869C5B51B8025FF0034DD95 /* UserCenterHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869C5B41B8025FF0034DD95 /* UserCenterHeadView.swift */; };
+		1882F76A1B79F20500D8E0FB /* UIScrollView+KYParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882F7691B79F20500D8E0FB /* UIScrollView+KYParallaxHeaderView.swift */; };
 		188883DF1B751E180001FBDE /* KYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188883DE1B751E180001FBDE /* KYUtil.swift */; };
 		188CABA21B78E46B002EFD31 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CABA11B78E46B002EFD31 /* Array+Extension.swift */; };
 		188CABA41B78FAF3002EFD31 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CABA31B78FAF3002EFD31 /* BannerCell.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		0BFC7CA1B20D5B2B8725D4D0 /* Pods-iOutdoors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOutdoors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOutdoors/Pods-iOutdoors.debug.xcconfig"; sourceTree = "<group>"; };
 		1226F94176AD6C97584D90E7 /* Pods_iOutdoors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOutdoors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1869C5B41B8025FF0034DD95 /* UserCenterHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCenterHeadView.swift; sourceTree = "<group>"; };
+		1882F7691B79F20500D8E0FB /* UIScrollView+KYParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KYParallaxHeaderView.swift"; sourceTree = "<group>"; };
 		188883DE1B751E180001FBDE /* KYUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYUtil.swift; sourceTree = "<group>"; };
 		188CABA11B78E46B002EFD31 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		188CABA31B78FAF3002EFD31 /* BannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			children = (
 				27BF4A771B74628800810756 /* InfinitePageView.swift */,
 				27BF4A791B74978A00810756 /* KYPageController.swift */,
+				1882F7691B79F20500D8E0FB /* UIScrollView+KYParallaxHeaderView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				27BF4A721B7351D100810756 /* UserCenterVC.swift */,
+				1869C5B41B8025FF0034DD95 /* UserCenterHeadView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -500,8 +506,10 @@
 				188CABA21B78E46B002EFD31 /* Array+Extension.swift in Sources */,
 				2717F9B21B782B0D00B83281 /* UIColor+Extension.swift in Sources */,
 				27BF4A7A1B74978A00810756 /* KYPageController.swift in Sources */,
+				1869C5B51B8025FF0034DD95 /* UserCenterHeadView.swift in Sources */,
 				27FD62281B7206270033EDB2 /* AppDelegate.swift in Sources */,
 				27BF4A711B7347FE00810756 /* UIHelper.swift in Sources */,
+				1882F76A1B79F20500D8E0FB /* UIScrollView+KYParallaxHeaderView.swift in Sources */,
 				27FD625B1B7215250033EDB2 /* ODBaseViewController.swift in Sources */,
 				27BF4A731B7351D100810756 /* UserCenterVC.swift in Sources */,
 				27BF4A6A1B72FCE100810756 /* BaseObject.swift in Sources */,

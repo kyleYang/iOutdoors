@@ -44,7 +44,7 @@ class HomeVC : ODGroupTableVC,InfinitPageViewDelegate {
     
     //MARK: InfinitPageViewDelegate
     func numberOfCellInInfinitPageView(scrollView: InfinitePageView) -> Int {
-        return 5
+        return 2
     }
     
     func infinitPageView(scrollView: InfinitePageView, frame: CGRect, cellForRowAtIndex index: Int) -> InfinitPageViewCell {

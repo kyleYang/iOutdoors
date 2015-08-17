@@ -13,5 +13,8 @@ import UIKit
 public class ODBaseViewController : UIViewController {
     
     
+    public override func viewDidLoad() {
+        super.viewDidLoad()
         
+    }
 }
